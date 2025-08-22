@@ -1,0 +1,51 @@
+.gradient-background-header {
+  background: linear-gradient(300deg, #38b356, #45bec2, #2db838);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+
+  
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+p{
+    font-weight: 600;
+}
+h1{
+    background-color: white;
+    width: 175px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.first {
+    width: 300px;
+    margin: 0 auto; 
+    text-align:center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    min-height: 60vh; 
+}
+
+
+
+.perfil{
+    width: 130px;
+    border-radius: 50%;
+}
