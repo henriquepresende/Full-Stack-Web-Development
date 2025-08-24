@@ -129,10 +129,16 @@ h1 {
   font-weight: 600;
 }
 
-.third{
+
+body > section.aurora-background-footer > div > div > a{
   display: flex;
-  flex-direction: column;
-  gap: 80px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+button{
+  
+}
+.third{
+  
 }
