@@ -1,40 +1,30 @@
+/* HEADER */
 .gradient-background-header {
   background: linear-gradient(300deg, #b39c38, #35c2e6, #e20c0c);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
-
-  
 }
 
 @keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
-span{
+
+/* BORDER ANIMADO */
+span {
   border: 4px solid transparent;
   border-image: linear-gradient(90deg, #ff6a00, #ee0979, #00c9ff) 1;
   animation: border-move 6s linear infinite;
 }
 
 @keyframes border-move {
-  0% {
-    border-image-source: linear-gradient(90deg, #ff6a00, #ee0979, #00c9ff);
-  }
-  50% {
-    border-image-source: linear-gradient(270deg, #ff6a00, #ee0979, #00c9ff);
-  }
-  100% {
-    border-image-source: linear-gradient(90deg, #ff6a00, #ee0979, #00c9ff);
-  }
+  0% { border-image-source: linear-gradient(90deg, #ff6a00, #ee0979, #00c9ff); }
+  50% { border-image-source: linear-gradient(270deg, #ff6a00, #ee0979, #00c9ff); }
+  100% { border-image-source: linear-gradient(90deg, #ff6a00, #ee0979, #00c9ff); }
 }
 
+/* PULSE BACKGROUND */
 .pulse-background-main {
   background: linear-gradient(45deg, #e02832, #100e8f);
   background-size: 200% 200%;
@@ -42,39 +32,33 @@ span{
 }
 
 @keyframes pulse {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
+
+/* FOTO PERFIL COM GRADIENTE CIRCULAR */
 .circular-gradient-main {
   background: conic-gradient(from 0deg, #ff0080, #7928ca, #2afadf, #ff0080);
   animation: rotate 10s linear infinite;
 }
 
 @keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
-p{
+
+/* TEXTO */
+p {
     font-weight: 600;
 }
-h1{
+
+h1 {
     background-color: white;
     width: 175px;
     border-radius: 10px;
     border-style: solid;
     border-width: 1px;
-    border-right-style: solid;
     border-right-width: 6px;
     border-bottom-width: 5px;
     display: flex;
@@ -82,11 +66,11 @@ h1{
     align-items: center;
 }
 
-
+/* HEADER */
 .first {
     width: 300px;
     margin: 0 auto; 
-    text-align:center; 
+    text-align: center; 
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -94,23 +78,36 @@ h1{
     min-height: 60vh; 
 }
 
-
-.skills-img{
-  width: 300px;
-  height: 220px;
+/* FOTO PERFIL */
+.perfil {
+    width: 130px;
+    border-radius: 50%;
 }
 
-.second{
-  width: 300px;
-  margin: 0 auto;
+/* SEÇÃO SKILLS */
+.second {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  width: 100%;
+  gap: 40px;
 }
 
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
 
-.perfil{
-    width: 130px;
-    border-radius: 50%;
+.skill-item img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.skill-item p {
+  flex: 1;
+  font-weight: 600;
 }
