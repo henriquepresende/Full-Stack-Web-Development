@@ -48,6 +48,23 @@ span {
   100% { transform: rotate(360deg); }
 }
 
+.aurora-background-footer {
+  background: linear-gradient(180deg, #0d324d, #7f5a83, #a16a70);
+  background-size: 200% 200%;
+  animation: aurora-animation 20s ease-in-out infinite;
+}
+
+@keyframes aurora-animation {
+  0% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
 
 p {
     font-weight: 600;
@@ -110,4 +127,12 @@ h1 {
 .skill-item p {
   flex: 1;
   font-weight: 600;
+}
+
+.third{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
 }
