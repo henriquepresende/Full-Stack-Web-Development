@@ -136,9 +136,7 @@ body > section.aurora-background-footer > div > div > a{
   align-items: center;
   height: 150px;
 }
-button{
-  
-}
-.third{
-  
+
+body > section.aurora-background-footer > div > div > h1{
+  margin-left: 475px;
 }
