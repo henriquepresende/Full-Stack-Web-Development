@@ -1,4 +1,3 @@
-/* Variáveis e reset */
 :root {
     --primary-gradient: linear-gradient(300deg, #b39c38, #35c2e6, #e20c0c);
     --skills-gradient: linear-gradient(45deg, #e02832, #403de7);
@@ -147,13 +146,25 @@ body {
     padding: 0 4px;
 }
 
-/* Contact Section */
+/* Contact Section - CORREÇÕES APLICADAS AQUI */
 .contact-section {
     padding: var(--spacing-xl) 0;
     background: var(--footer-gradient);
     background-size: 200% 200%;
     animation: aurora-animation 20s ease-in-out infinite;
     color: var(--text-light);
+    text-align: center;
+}
+
+.contact-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.contact-title {
+    color: #333; /* Garante que o texto seja visível no fundo branco */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
 .contact-actions {
@@ -185,6 +196,7 @@ body {
     align-items: center;
     padding-top: var(--spacing-lg);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: var(--spacing-xl);
 }
 
 .social-links {
@@ -258,6 +270,10 @@ body {
         gap: var(--spacing-md);
         text-align: center;
     }
+    
+    .contact-header {
+        margin-bottom: var(--spacing-lg);
+    }
 }
 
 @media (max-width: 480px) {
@@ -276,5 +292,14 @@ body {
     
     .section-title {
         font-size: 2rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .contact-actions {
+        margin: var(--spacing-lg) 0;
     }
 }
