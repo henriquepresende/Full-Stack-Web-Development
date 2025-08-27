@@ -370,3 +370,49 @@ body {
         margin: var(--spacing-lg) 0;
     }
 }
+
+/* ===== DARK MODE TOGGLE ===== */
+.dark-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+  z-index: 1000;
+}
+
+.dark-toggle:hover {
+  transform: scale(1.1);
+  background: var(--secondary-color);
+}
+
+/* ===== DARK MODE VARIATIONS ===== */
+body.dark-mode {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode header,
+body.dark-mode section,
+body.dark-mode footer {
+  background: #1e1e1e;
+  color: #f1f1f1;
+}
+
+body.dark-mode a {
+  color: #90caf9;
+}
+
+body.dark-mode .project-card,
+body.dark-mode .card {
+  background: #2c2c2c;
+  border: 1px solid #444;
+}
