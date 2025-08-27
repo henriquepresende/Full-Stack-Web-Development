@@ -81,17 +81,23 @@ body {
     margin: 0 auto;
 }
 
-/* Skills Section */
+/* Skills Section - CORREÇÃO APLICADA AQUI */
 .skills-section {
     padding: var(--spacing-xl) 0;
     background: var(--skills-gradient);
     background-size: 200% 200%;
     animation: pulse 4s ease-in-out infinite;
+    text-align: center;
+}
+
+.skills-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-xl);
 }
 
 .section-title {
     font-size: 2.5rem;
-    margin-bottom: var(--spacing-xl);
     background-color: white;
     padding: var(--spacing-sm) var(--spacing-lg);
     border-radius: var(--border-radius);
@@ -146,7 +152,7 @@ body {
     padding: 0 4px;
 }
 
-/* Contact Section - CORREÇÕES APLICADAS AQUI */
+/* Contact Section */
 .contact-section {
     padding: var(--spacing-xl) 0;
     background: var(--footer-gradient);
@@ -164,7 +170,6 @@ body {
 
 .contact-title {
     color: #333; /* Garante que o texto seja visível no fundo branco */
-    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
 .contact-actions {
@@ -271,7 +276,7 @@ body {
         text-align: center;
     }
     
-    .contact-header {
+    .contact-header, .skills-header {
         margin-bottom: var(--spacing-lg);
     }
 }
