@@ -41,12 +41,8 @@
 }
 
 @keyframes glowline {
-  from {
-    box-shadow: 0 0 10px #ff6b6b;
-  }
-  to {
-    box-shadow: 0 0 20px #1dd1a1;
-  }
+  from { box-shadow: 0 0 10px #ff6b6b; }
+  to   { box-shadow: 0 0 20px #1dd1a1; }
 }
 
 .timeline-item {
@@ -90,23 +86,12 @@
   margin-bottom: 6px;
 }
 
-.timeline-content h3 {
-  font-size: 1.3rem;
-  margin-bottom: 8px;
-  color: #fff;
-}
-
-.timeline-content p {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #ccc;
-}
+.timeline-content h3 { font-size: 1.3rem; margin-bottom: 8px; color: #fff; }
+.timeline-content p  { font-size: 1rem; line-height: 1.5; color: #ccc; }
 
 /* Responsivo */
 @media (max-width: 768px) {
-  .timeline-line {
-    left: 8px;
-  }
+  .timeline-line { left: 8px; }
   .timeline-item {
     width: 100%;
     padding-left: 40px;
@@ -114,3 +99,13 @@
   }
 }
 
+/* ====== Animação de entrada (timeline) ====== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
