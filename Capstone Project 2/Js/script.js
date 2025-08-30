@@ -10,6 +10,17 @@ if (toggleBtn) {
     const dark = document.body.classList.contains("dark-mode");
     toggleBtn.textContent = dark ? "☀️" : "🌙";
     localStorage.setItem("theme", dark ? "dark" : "light");
+
+    // 🔥 força atualização nos certificados (se existir)
+    document.querySelectorAll(".certificate-card").forEach(card => {
+      if (dark) {
+        card.style.background = "#1e1e1e";
+        card.style.color = "#f1f1f1";
+      } else {
+        card.style.background = "#fff";
+        card.style.color = "#222";
+      }
+    });
   });
 }
 
