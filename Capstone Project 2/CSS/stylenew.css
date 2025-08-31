@@ -244,3 +244,49 @@ body.dark-mode .project-card { background-color: var(--secondary-color); box-sha
   background: linear-gradient(135deg, #0056b3, #00408a);
   box-shadow: 0 6px 16px rgba(0, 86, 179, 0.6);
 }
+
+.stats-section {
+  text-align: center;
+  margin: 4rem 0;
+  padding: 2rem;
+  background: var(--bg-light, #f8f9fa);
+  border-radius: 12px;
+}
+
+.stats-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-color, #333);
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  flex: 1 1 200px;
+  padding: 1rem;
+  background: var(--bg-card, #fff);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color, #007BFF);
+  display: block;
+}
+
+.stat-item p {
+  font-size: 1rem;
+  color: var(--text-muted, #555);
+}
