@@ -84,3 +84,32 @@ document.addEventListener("DOMContentLoaded", () => {
     timelineItems.forEach(item => timelineObserver.observe(item));
   }
 });
+
+// ===== Animação dos números da seção estatísticas =====
+const statNumbers = document.querySelectorAll(".stat-number");
+if (statNumbers.length) {
+  const statsObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = +el.getAttribute("data-target");
+        let count = 0;
+        const speed = Math.ceil(target / 100); // velocidade da animação
+
+        const updateCount = () => {
+          count += speed;
+          if (count > target) count = target;
+          el.textContent = count;
+          if (count < target) {
+            requestAnimationFrame(updateCount);
+          }
+        };
+
+        updateCount();
+        statsObserver.unobserve(el); // anima só uma vez
+      }
+    });
+  }, { threshold: 0.3 });
+
+  statNumbers.forEach(num => statsObserver.observe(num));
+}
