@@ -318,3 +318,27 @@ body.dark-mode .stat-number { color: var(--accent-color); }
   font-size: 1rem;
   color: var(--text-muted);
 }
+
+/* ===== Color Picker ===== */
+.color-picker {
+  position: fixed;
+  bottom: 80px; /* fica acima do botão voltar ao topo */
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.color-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+.color-btn:hover {
+  transform: scale(1.2);
+}
