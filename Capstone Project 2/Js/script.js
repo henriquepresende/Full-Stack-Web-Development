@@ -113,3 +113,20 @@ if (statNumbers.length) {
 
   statNumbers.forEach(num => statsObserver.observe(num));
 }
+
+// 🎨 Color Picker
+const buttons = document.querySelectorAll('.color-btn');
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const color = btn.getAttribute('data-color');
+    document.documentElement.style.setProperty('--accent-color', color);
+    localStorage.setItem('accentColor', color);
+  });
+});
+
+// carregar cor salva no localStorage
+const savedColor = localStorage.getItem('accentColor');
+if (savedColor) {
+  document.documentElement.style.setProperty('--accent-color', savedColor);
+}
