@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Meus cantores favoritos - Henrique Ricky">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/stylenew.css">
+  <link rel="stylesheet" href="./css/music.css"> <!-- CSS exclusivo para música -->
+  <link rel="stylesheet" href="./CSS/stylenew.css">
   <title>Top 5 Cantores | Henrique</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">Sobre</a></li>
           <li class="nav-item"><a class="nav-link" href="certificates.html">Certificados</a></li>
-          <li class="nav-item"><a class="nav-link" href="music.html">🎵 Música</a></li>
+          <li class="nav-item"><a class="nav-link active" href="music.html">🎵 Música</a></li>
           <li class="nav-item"><a class="nav-link" href="index.html#contact">Contato</a></li>
         </ul>
       </div>
@@ -32,40 +33,48 @@
   </nav>
 
   <!-- HEADER -->
-  <header class="hero-section">
+  <header class="hero-music">
     <div class="container">
-      <div class="hero-content">
-        <h1 class="hero-title">🎤 Meus Cantores Favoritos</h1>
-        <p class="hero-quote">A música sempre fez parte da minha vida. Aqui estão meus 5 favoritos.</p>
-      </div>
+      <h1 class="music-title">🎤 Meus Cantores Favoritos</h1>
+      <p class="music-subtitle">Top 5 artistas que mais me inspiram no violão e na vida.</p>
     </div>
   </header>
 
   <!-- TOP 5 CANTORES -->
   <section class="music-section">
     <div class="container">
-      <h2 class="section-title">Top 5 Cantores</h2>
-      <div class="music-container">
-        <div class="music-card reveal">
-          <h3>1. Cantor 1</h3>
-          <p>Motivo: Inspira muito na minha jornada musical.</p>
+      <div class="music-grid">
+        
+        <div class="music-card">
+          <img src="./img/mayer.jpg" alt="John Mayer">
+          <h3>1. John Mayer</h3>
+          <p>Minha maior inspiração no violão. Estilo único e letras profundas.</p>
         </div>
-        <div class="music-card reveal">
-          <h3>2. Cantor 2</h3>
-          <p>Motivo: Letras incríveis e presença de palco.</p>
+        
+        <div class="music-card">
+          <img src="./img/shawn.jpg" alt="Shawn Mendes">
+          <h3>2. Shawn Mendes</h3>
+          <p>Influência pop que admiro, principalmente pela evolução musical.</p>
         </div>
-        <div class="music-card reveal">
-          <h3>3. Cantor 3</h3>
-          <p>Motivo: Sempre me inspira a tocar violão.</p>
+        
+        <div class="music-card">
+          <img src="./img/zach.jpg" alt="Zach Bryan">
+          <h3>3. Zach Bryan</h3>
+          <p>Estilo country/folk com letras emocionantes que me inspiram bastante.</p>
         </div>
-        <div class="music-card reveal">
-          <h3>4. Cantor 4</h3>
-          <p>Motivo: Voz única e marcante.</p>
+        
+        <div class="music-card">
+          <img src="./img/eric.jpg" alt="Eric Clapton">
+          <h3>4. Eric Clapton</h3>
+          <p>Lenda do blues e rock, referência eterna no violão e guitarra.</p>
         </div>
-        <div class="music-card reveal">
-          <h3>5. Cantor 5</h3>
-          <p>Motivo: Referência no estilo que curto.</p>
+        
+        <div class="music-card">
+          <img src="./img/norah.jpg" alt="Norah Jones">
+          <h3>5. Norah Jones</h3>
+          <p>Voz suave e inspiradora. Uma das minhas favoritas para relaxar.</p>
         </div>
+
       </div>
     </div>
   </section>
