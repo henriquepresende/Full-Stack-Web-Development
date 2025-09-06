@@ -88,6 +88,11 @@
   gap: 1rem;
 }
 
+/* Mantém todos os players com altura consistente (ignora o height do atributo) */
+.songs-grid iframe {
+  height: 152px !important;
+}
+
 /* Responsividade */
 @media (max-width: 600px) {
   .music-title { font-size: 2rem; }
