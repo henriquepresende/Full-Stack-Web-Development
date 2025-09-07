@@ -63,23 +63,25 @@
   color: #ccc;
 }
 
-/* ===== Seção de playlists ===== */
-.artist-section {
-  margin: 3rem auto;
-  max-width: 1000px;
-  padding: 2rem;
+/* ===== Bloco completo do artista (card + músicas) ===== */
+.artist-block {
   background: #111;
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
-  color: #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+  padding: 2rem;
+  margin-bottom: 3rem;
 }
 
-.artist-section h2 {
+.artist-block h2 {
   text-align: center;
   margin-bottom: 1.5rem;
   color: #1DB954; /* verde Spotify */
   font-size: 2rem;
   font-weight: bold;
+}
+
+.artist-block .music-card {
+  margin-bottom: 2rem; /* separa o card do grid de músicas */
 }
 
 .songs-grid {
@@ -88,13 +90,19 @@
   gap: 1rem;
 }
 
-/* Mantém todos os players com altura consistente (ignora o height do atributo) */
 .songs-grid iframe {
   height: 152px !important;
+  border-radius: 12px;
 }
 
-/* Responsividade */
+/* Mantém consistência de blocos */
+.artist-block + .artist-block {
+  margin-top: 2rem;
+}
+
+/* ===== Responsividade ===== */
 @media (max-width: 600px) {
   .music-title { font-size: 2rem; }
   .music-card h3 { font-size: 1.2rem; }
+  .artist-block h2 { font-size: 1.5rem; }
 }
