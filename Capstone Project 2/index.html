@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Henrique Ricky | Portfólio - Desenvolvedor & Músico</title>
+  <meta name="description" content="Portfólio de Henrique Ricky - Desenvolvedor de software e músico. Projetos em HTML, CSS, JavaScript, C++, Java e mais. Veja meus certificados, habilidades e entre em contato!">
+  <meta name="keywords" content="Henrique Ricky, portfólio, desenvolvedor web, programador, HTML, CSS, JavaScript, Bootstrap, C++, Java, React, Spring Boot, Python, violão, música">
+  <meta name="author" content="Henrique Ricky">
+
+  <!-- Open Graph (Preview no LinkedIn, WhatsApp, Facebook) -->
+  <meta property="og:title" content="Henrique Ricky | Portfólio">
+  <meta property="og:description" content="Desenvolvedor e músico apaixonado por tecnologia e violão. Confira meus projetos e certificados.">
+  <meta property="og:image" content="./img/Imagem-do-perfil.jpg"> <!-- substitua pelo caminho da sua imagem -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://seu-site.com"> <!-- coloque a URL real depois -->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Henrique Ricky | Portfólio">
+  <meta name="twitter:description" content="Portfólio de Henrique Ricky - Desenvolvedor & Músico. Confira meus projetos, certificados e contato.">
+  <meta name="twitter:image" content="./img/Imagem-do-perfil.jpg"> <!-- substitua pela sua imagem -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/stylenew.css">
+</head>
+<body>
+  <!-- Botão Dark Mode -->
+  <button id="darkModeToggle" class="dark-toggle">🌙</button>
+  
+  <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="#">Henrique</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projetos</a></li>
+        <li class="nav-item"><a class="nav-link" href="music.html">Músicas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- HEADER -->
+  <header class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-content"> 
+        <h1 class="hero-title"><span class="typing"></span></h1>
+        <img class="profile-img" src="./img/Imagem do WhatsApp de 2025-07-23 à(s) 03.07.02_6021e04b.jpg" alt="Foto de perfil de Henrique">
+        <p class="hero-quote">"Adoro programar, explorar novas tecnologias e tocar violão!"</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- SKILLS -->
+  <section class="skills-section" id="skills" aria-labelledby="skills-heading">
+    <div class="container">
+      <div class="skills-header">
+        <h2 id="skills-heading" class="section-title">Habilidades</h2>
+      </div>
+      <div class="skills-container">
+        <article class="skill-card reveal">
+          <div class="skill-img-container">
+            <img class="skill-img" src="./IMG/download.jpg" alt="Ícone representando desenvolvimento de software">
+          </div>
+          <div class="skill-content">
+            <p>Tenho conhecimento em HTML, CSS, JavaScript e Bootstrap, além de experiência em linguagens como C, C++ e Java. Atualmente, estou aprendendo React, Spring Boot e Python para ampliar minhas habilidades em desenvolvimento web e back-end.</p>
+          </div>
+        </article>
+        <article class="skill-card skill-card--reverse reveal">
+          <div class="skill-img-container">
+            <img class="skill-img" src="./IMG/idade-crianca-tocar-violao-guitarra.jpeg" alt="Pessoa tocando violão">
+          </div>
+          <div class="skill-content">
+            <p>Meu hobby favorito sem dúvida é tocar <span class="highlight-text">violão</span>, sei tocar 200+ músicas e todas eu aprendi sozinho.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projetos</h2>
+      <div class="projects-container">
+        <div class="project-card reveal">
+          <h3>Site de Receitas</h3>
+          <p>Um site responsivo de receitas usando HTML, CSS Grid e JavaScript.</p>
+        </div>
+        <div class="project-card reveal">
+          <h3>Sistema de Ingressos</h3>
+          <p>Plataforma para compra e gestão de ingressos com pagamentos e avaliações.</p>
+        </div>
+        <div class="project-card reveal">
+          <h3>Ecommerce em C++</h3>
+          <p>Jogo simples de aventura feito em C++ para treinar lógica e POO.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="cta-section">
+  <h2>📜 Quer ver meus certificados?</h2>
+  <a href="certificates.html" class="btn-cta">Ver Certificados</a>
+</section>
+
+<section class="stats-section">
+  <h2>📊 Minhas Estatísticas</h2>
+  <div class="stats-container">
+    <div class="stat-item">
+      <span class="stat-number" data-target="10">0</span>
+      <p>Certificados</p>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" data-target="5">0</span>
+      <p>Projetos Concluídos</p>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" data-target="3">0</span>
+      <p>Anos de Experiência</p>
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Henrique Ricky. Todos os direitos reservados.</p>
+    
+    <div class="footer-socials">
+      <a href="https://github.com/henriquepresende" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/henrique-resende-rocha/" target="_blank">LinkedIn</a>
+    </div>
+
+    <a href="contact.html" class="footer-btn">🚀 Entre em contato</a>
+  </div>
+</footer>
+
+  <!-- Botão voltar ao topo -->
+  <button id="backToTop" class="back-to-top">⬆</button>
+
+  <!-- Seletor de cores -->
+<div class="color-picker">
+  <button class="color-btn" data-color="#35c2e6" style="background:#35c2e6"></button>
+  <button class="color-btn" data-color="#ff4d6d" style="background:#ff4d6d"></button>
+  <button class="color-btn" data-color="#8a2be2" style="background:#8a2be2"></button>
+  <button class="color-btn" data-color="#00c853" style="background:#00c853"></button>
+</div>
+
+  <script src="./js/script.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" defer></script>
+</body>
+</html>
